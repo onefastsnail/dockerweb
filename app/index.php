@@ -1,5 +1,4 @@
 <?php
-
 $servername = getenv('APP_DB_HOST');
 $username = getenv('MYSQL_USER');
 $password = getenv('MYSQL_PASSWORD');
@@ -11,5 +10,6 @@ $conn = new mysqli($servername, $username, $password);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
+echo '<h1 style="text-align:center;">Database connection successfull!</h1>';
 
-echo "Connected successfully";
+echo phpinfo();

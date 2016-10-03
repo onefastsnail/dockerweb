@@ -1,6 +1,8 @@
 mysql:
     image: mariadb:latest
     container_name: mysql
+    ports:
+        - 3306:3306
     volumes:
         - ./data/mariadb:/var/lib/mysql
     env_file:
