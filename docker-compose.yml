@@ -31,7 +31,7 @@ php:
 app:
     image: alpine:latest
     volumes:
-        - ./app:/var/www/html
+        - ./public:/var/www/html
     command: "true"
 
 phpmyadmin:
